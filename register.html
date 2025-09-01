@@ -28,46 +28,188 @@
         </div>
 
         <div class="register-box">
-            <form id="registerForm">
+    <!-- ✅ Proper form wrapping everything -->
+    <form id="registerForm">
+
+        <div class="form-flex-container">
+
+            <!-- ===== Personal Information ===== -->
+            <div class="form-section">
                 <h2>Personal Information</h2>
                 <input type="text" id="fullName" placeholder="Full Name"><br><br>
                 <input type="email" id="email" placeholder="Email"><br><br>
                 <input type="text" id="phone" placeholder="Phone Number"><br><br>
+            </div>
 
-                <h2>Educational Background</h2>
-                <label for="stats">Stats/University:</label><br>
-                <select id="stats">
-                <option value="">-- Select Stats --</option>
-                <option value="Speed University">Speed University</option>
-                <option value="Guts University">Guts University</option>
-                <option value="Power University">Power University</option>
-                <option value="Stamina University">Stamina University</option>
-                <option value="Wit University">Wit University</option>
-                </select><br><br>
-
-                <label for="specialty">Specialty/Course:</label><br>
-                <select id="specialty">
-                <option value="">-- Select Specialty --</option>
-                <option value="Long">Long</option>
-                <option value="Mile">Mile</option>
-                <option value="Medium">Medium</option>
-                <option value="Turf">Turf</option>
-                <option value="Dirt">Dirt</option>
-                <option value="End Closer">End Closer</option>
-                <option value="Front Runner">Front Runner</option>
-                <option value="Late Surger">Late Surger</option>
-                <option value="Pace Chaser">Pace Chaser</option>
-                </select><br><br>
-
-
+            <!-- ===== Account Details ===== -->
+            <div class="form-section">
                 <h2>Account Details</h2>
                 <input type="text" id="username" placeholder="Username"><br><br>
                 <input type="password" id="password" placeholder="Password"><br><br>
                 <input type="password" id="confirmPassword" placeholder="Confirm Password"><br><br>
+            </div>
 
-                <input type="submit" value="Register">
-            </form>
+        </div> <!-- .form-flex-container -->
+
+        <h2>Educational Background</h2>
+        <label for="stats">Stats/University:</label><br>
+        <select id="stats">
+            <option value="">-- Select Stats --</option>
+            <option value="Speed University">Speed University</option>
+            <option value="Guts University">Guts University</option>
+            <option value="Power University">Power University</option>
+            <option value="Stamina University">Stamina University</option>
+            <option value="Wit University">Wit University</option>
+        </select><br><br>
+
+
+                <!-- ===== START CHANGES: Horizontal course-grade dropdowns ===== -->
+                <div class="specialty-row">
+
+                <div class="course-grade">
+                    <label for="Long">Long:</label>
+                    <select id="Long">
+                    <option value="">-- Select Grade --</option>
+                    <option value="S">S</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    </select>
+                </div>
+
+                <div class="course-grade">
+                    <label for="Mile">Mile:</label>
+                    <select id="Mile">
+                    <option value="">-- Select Grade --</option>
+                    <option value="S">S</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    </select>
+                </div>
+
+                <div class="course-grade">
+                    <label for="Medium">Medium:</label>
+                    <select id="Medium">
+                    <option value="">-- Select Grade --</option>
+                    <option value="S">S</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    </select>
+                </div>
+
+                <div class="course-grade">
+                    <label for="Turf">Turf:</label>
+                    <select id="Turf">
+                    <option value="">-- Select Grade --</option>
+                    <option value="S">S</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    </select>
+                </div>
+
+                <div class="course-grade">
+                    <label for="Dirt">Dirt:</label>
+                    <select id="Dirt">
+                    <option value="">-- Select Grade --</option>
+                    <option value="S">S</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    </select>
+                </div>
+
+                <div class="course-grade">
+                    <label for="EndCloser">End Closer:</label>
+                    <select id="EndCloser">
+                    <option value="">-- Select Grade --</option>
+                    <option value="S">S</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    </select>
+                </div>
+
+                <div class="course-grade">
+                    <label for="FrontRunner">Front Runner:</label>
+                    <select id="FrontRunner">
+                    <option value="">-- Select Grade --</option>
+                    <option value="S">S</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    </select>
+                </div>
+
+                <div class="course-grade">
+                    <label for="LateSurger">Late Surger:</label>
+                    <select id="LateSurger">
+                    <option value="">-- Select Grade --</option>
+                    <option value="S">S</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    </select>
+                </div>
+
+                <div class="course-grade">
+                    <label for="PaceChaser">Pace Chaser:</label>
+                    <select id="PaceChaser">
+                    <option value="">-- Select Grade --</option>
+                    <option value="S">S</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    </select>
+                </div>
+
+                </div>
+                <!-- ===== END CHANGES ===== -->
+
+                 
             <p id="message"></p>
+            <!-- ===== Register Button ===== -->
+            <input type="submit" value="Register">
+
+            </form>  
         </div>
     </section>
 

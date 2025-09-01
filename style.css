@@ -353,15 +353,18 @@ html {
 }
 
 .register-box {
-    background: rgba(255, 255, 255, 0.2); /* transparent box */
+    background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
-    margin: 20px auto; /* center it */
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
     text-align: center;
+    position: relative;  /* add this */
+    z-index: 10;         /* ensure it's above background */
 }
 
-.register-box input {
+.register-box input[type="submit"] {
     width: 90%;
     padding: 10px;
     margin: 8px 0;
@@ -374,4 +377,63 @@ html {
 /* Makes placeholder text black too */
 .register-box input::placeholder {
     color: #000;
+}
+
+/* Logout button styling */
+#logoutBtn {
+    background-color: #f44336; /* red */
+    color: #fff;
+}
+
+#logoutBtn:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Admin Clear Users button styling */
+#clearUsersBtn {
+    background-color: #2196F3; /* blue */
+    color: #fff;
+}
+
+#clearUsersBtn:hover {
+    background-color: #1976D2;
+    transform: scale(1.05);
+}
+
+/* Horizontal course-grade dropdown layout */
+.specialty-row {
+    display: flex;
+    flex-wrap: wrap; /* wrap to next line if screen too narrow */
+    justify-content: center; /* center all course-grade items horizontally */
+    gap: 15px; /* space between dropdowns */
+    margin-bottom: 20px;
+}
+
+.course-grade {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center label and dropdown */
+    min-width: 100px; /* adjust width as needed */
+}
+
+/* Center the last dropdown (Pace Chaser) if it wraps to a new line */
+#PaceChaser {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Flex container for personal info + account details */
+.form-flex-container {
+    display: flex;
+    gap: 40px;          /* space between sections */
+    justify-content: center;
+    flex-wrap: wrap;    /* wrap on smaller screens */
+    margin-bottom: 20px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;  /* adjust width */
 }
