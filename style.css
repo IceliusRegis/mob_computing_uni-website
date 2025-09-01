@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*-------------MAIN CSS--------------*/
+
+/* FOOTER */
+footer {
+    background: #ffffff;
+    padding: 2rem;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* BACK TO TOP BUTTON */
+.back-to-top {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #dc143c;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top span {
+	color: #fff;
+	font-size: 3rem;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+	background-color: #be1a3b;
+}
+.back-to-top:hover span {
+	transform: translateY(-4px);
+}
+
+/* NAV */
+.nav-links{
+    display: flex;
+    padding: 1% 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links img {
+    width: 17rem;
+}
+
+.nav-links li{
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.nav-links ul li a{
+    font-size: 1.25rem;
+    background: -webkit-linear-gradient(#fae813, #f9730e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+/*-------------HOMEPAGE--------------*/
+
+.homepage{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(25, 25, 25, 0.719)),url(icons/tracen_academy_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* HEADER */
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(25, 25, 25, 0.719)),url(icons/uma_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+.header .inside {
+    position: relative;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem;
+}
+
+.header .inside .text-box{
+    color:#ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header .inside .text-box h1{
+    font-size: 5rem;
+    padding: 1rem;
+}
+
+.header .inside .text-box p{
+    padding: 1rem;
+}
+
+.header .inside img{
+    width: 30rem;
+    margin: 1rem;
+}
+
+/* School History */
+.school-history {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.school-history .row {
+    display: flex;
+}
+
+.school-history h1{
+    font-size: 5rem;
+    padding: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.school-history .row .sh-col{
+    background: rgb(150, 172, 246);
+}
+
+
+.school-history .row .sh-col h1{
+    font-size: 3.5em;
+    padding: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: -webkit-linear-gradient(#fae813, #f9730e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+}
+
+.school-history .row .sh-col p{
+    color:#000000;
+    font-size: 1.5em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2rem;
+}
+
+/* MISSION-VISION */
+.mission-vision {
+    display: flex;
+    min-height: 50vh;
+    margin: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-vision .mv-col{
+    background: #96acf6;
+    flex-direction: column;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 2rem;
+    padding: 6em 0.5em 6em 1em;
+}
+
+.mission-vision .mv-col h1{
+    padding-bottom: 1em;
+    font-size: 2rem;
+}
+
+/* COURSES */
+.courses {
+    background: #ffcd27;
+    padding: 8rem;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    transition: transform 1.5s ease;
+    flex-direction: column;
+}
+
+.courses .c-row {
+    display: flex;
+}
+
+.courses .c-row .course-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin: 1em;
+    padding: 1.5em;
+    box-sizing: border-box;
+}
+
+.courses .c-row .course-col img{
+    margin-top: 1em;
+    width: 100%;
+}
+
+.courses #front-runner{
+    background: #cfffc4;
+}
+
+.courses #pace-chaser{
+    background: #ffdeb9;
+}
+
+.courses #late-surger{
+    background: #ddb7ff;
+}
+
+.courses #end-closer{
+    background: #ff9a9a;
+}
+
+/*-------------ABOUT US PAGE--------------*/
+
+.sub-header-about_us{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(icons/uma_background2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header-about_us h1{
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.director {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem;
+}
+
+.director-col h1{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.facilities {
+    background:#96acf6;
+}
+
+
+.facilities h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+    padding: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.facilities .facilities.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.facilities .slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.facilities .slides img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.facilities .prev, .next {
+  position: absolute;
+  transform: translateY(-750%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.facilities .prev { 
+    left: 10px; 
+}
+.facilities .next {
+    right: 10px; 
+}
+
+.facilities .prev:hover, .next:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+/*-------------REGISTER--------------*/
+
+.sub-header-register{
+    height: 150vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(icons/uma_background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-header-register .big-text{
+    background-color:#000000;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.sub-header-register h1{
+    font-size: 6rem;
+    background: -webkit-linear-gradient(#ff53c6, #f9730e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
