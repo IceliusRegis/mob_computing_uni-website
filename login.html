@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Registration</title>
+    <title>University Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <section class="sub-header-register">
+    <section class="sub-header-register"> <!-- same style as register -->
         <nav class="nav-links">
             <img src="icons/derby_university.png" alt="University Logo">
             <ul>
@@ -24,50 +24,43 @@
         </nav>
 
         <div class="big-text">
-            <h1>Register Now!</h1>
+            <h1>Login</h1>
         </div>
 
-        <div class="register-box">
-            <form id="registerForm">
-                <h2>Personal Information</h2>
-                <input type="text" id="fullName" placeholder="Full Name"><br><br>
-                <input type="email" id="email" placeholder="Email"><br><br>
-                <input type="text" id="phone" placeholder="Phone Number"><br><br>
-
+        <div class="register-box"> <!-- same transparent box -->
+            <form id="loginForm">
                 <h2>Educational Background</h2>
                 <label for="stats">Stats/University:</label><br>
                 <select id="stats">
-                <option value="">-- Select Stats --</option>
-                <option value="Speed University">Speed University</option>
-                <option value="Guts University">Guts University</option>
-                <option value="Power University">Power University</option>
-                <option value="Stamina University">Stamina University</option>
-                <option value="Wit University">Wit University</option>
+                    <option value="">-- Select Stats --</option>
+                    <option value="Speed University">Speed University</option>
+                    <option value="Guts University">Guts University</option>
+                    <option value="Power University">Power University</option>
+                    <option value="Stamina University">Stamina University</option>
+                    <option value="Wit University">Wit University</option>
                 </select><br><br>
 
                 <label for="specialty">Specialty/Course:</label><br>
                 <select id="specialty">
-                <option value="">-- Select Specialty --</option>
-                <option value="Long">Long</option>
-                <option value="Mile">Mile</option>
-                <option value="Medium">Medium</option>
-                <option value="Turf">Turf</option>
-                <option value="Dirt">Dirt</option>
-                <option value="End Closer">End Closer</option>
-                <option value="Front Runner">Front Runner</option>
-                <option value="Late Surger">Late Surger</option>
-                <option value="Pace Chaser">Pace Chaser</option>
+                    <option value="">-- Select Specialty --</option>
+                    <option value="Long">Long</option>
+                    <option value="Mile">Mile</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Turf">Turf</option>
+                    <option value="Dirt">Dirt</option>
+                    <option value="End Closer">End Closer</option>
+                    <option value="Front Runner">Front Runner</option>
+                    <option value="Late Surger">Late Surger</option>
+                    <option value="Pace Chaser">Pace Chaser</option>
                 </select><br><br>
-
 
                 <h2>Account Details</h2>
                 <input type="text" id="username" placeholder="Username"><br><br>
                 <input type="password" id="password" placeholder="Password"><br><br>
-                <input type="password" id="confirmPassword" placeholder="Confirm Password"><br><br>
 
-                <input type="submit" value="Register">
+                <input type="submit" value="Login">
             </form>
-            <p id="message"></p>
+            <p id="loginMessage"></p>
         </div>
     </section>
 

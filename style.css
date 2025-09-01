@@ -351,3 +351,27 @@ html {
     font-style: normal;
     text-decoration: none;
 }
+
+.register-box {
+    background: rgba(255, 255, 255, 0.2); /* transparent box */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto; /* center it */
+    text-align: center;
+}
+
+.register-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    color: #000; /* change to white if background is dark */
+}
+
+/* Makes placeholder text black too */
+.register-box input::placeholder {
+    color: #000;
+}
