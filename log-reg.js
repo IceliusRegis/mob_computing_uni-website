@@ -100,4 +100,25 @@ if (loginForm) {
         loginForm.reset();
         console.log("Login successful:", matchedUser);
     });
+
+     // ---------------- CLEAR USERS BUTTON ----------------
+    const loginBox = loginForm.parentElement; // assuming loginForm is inside the transparent box
+    const clearBtn = document.createElement("button");
+    clearBtn.type = "button";
+    clearBtn.id = "clearUsersBtn";
+    clearBtn.textContent = "Clear Registered Users";
+    clearBtn.style.marginTop = "10px"; // simple styling
+    clearBtn.style.padding = "8px 12px";
+    clearBtn.style.cursor = "pointer";
+
+    loginBox.appendChild(clearBtn);
+
+    clearBtn.addEventListener("click", function() {
+        if (confirm("⚠ Are you sure you want to clear all registered users?")) {
+            localStorage.removeItem("users");
+            users = []; // clear in-memory array
+            alert("✅ All registered users have been cleared.");
+            console.log("All users cleared from localStorage and memory.");
+        }
+    });
 }
