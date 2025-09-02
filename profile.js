@@ -13,7 +13,7 @@ if (currentUser) {
 
 // Create table
 const table = document.createElement("table");
-table.border = "1";
+table.border = "1"; 
 table.style.borderCollapse = "collapse";
 table.style.width = "100%";
 table.style.textAlign = "left";

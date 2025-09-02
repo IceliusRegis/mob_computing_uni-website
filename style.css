@@ -327,7 +327,7 @@ html {
 /*-------------REGISTER--------------*/
 
 .sub-header-register{
-    height: 125vh;
+    height: 175vh;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(icons/uma_background.jpg);
     background-position: center;
@@ -365,17 +365,24 @@ html {
     text-align: center;
     position: relative;  /* add this */
     z-index: 10;         /* ensure it's above background */
+    overflow: auto;
 }
 
 .register-box input[type="submit"] {
-    width: 90%;
+    width: 70%;
     padding: 1rem;
     margin: 0.75rem 0;
-    border: 1px solid #ccc;
+    border: 0;
     border-radius: 5px;
-    background: transparent;
-    color: #000; /* change to white if background is dark */
+    background: #fae813;
+    color: #ffffff;
+    font-size: 4rem;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none; /* change to white if background is dark */
 }
+
 
 
 /* Makes placeholder text black too */
@@ -417,6 +424,7 @@ html {
 .course-grade {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center; /* center label and dropdown */
     min-width: 100px; /* adjust width as needed */
 }
@@ -449,6 +457,7 @@ html {
     font-weight: 400;
     font-style: normal;
     -webkit-text-stroke: 1.5px #ff53c6;
+    margin: 0.25rem;
 }
 
 .form-section .form-col{
@@ -466,6 +475,56 @@ html {
     width: 20rem;
 }
 
-.form.section #stats{
-    width:35%;
+
+.form-section label{
+    color: #000;
+    background: #fff8aa;
+    padding: 0.1rem;
+    width: 25%;
+    align-self: center;
+    font-family: 'Comic Sans MS', cursive;
+    border-radius: 0.5rem;
+}
+
+.form-section #stats{
+    text-align: center;
+    margin: 0.5rem;
+    font-family: 'Comic Sans MS', cursive;
+    align-self: center;
+    width: 50%;
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+.course-grade{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.course-grade label{
+    color: #000;
+    background: #fff8aa;
+    padding: 0.1rem;
+    margin: 0.45rem;
+    align-self: center;
+    font-family: 'Comic Sans MS', cursive;
+    border-radius: 0.5rem;
+}
+
+.course-grade select{
+    text-align: center;
+    margin: 0.25rem;
+    font-family: 'Comic Sans MS', cursive;
+    align-self: center;
+    width: 50%;
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+.specialty-row p{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 1.5rem;
+    align-self: center;
 }
