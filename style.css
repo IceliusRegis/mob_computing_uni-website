@@ -531,3 +531,51 @@ html {
     align-self: center;
 }
 
+/* ---- User Table Styling ---- */
+.user-table {
+  width: 95%;              /* narrower than full width */
+  max-width: 1200px;       /* keep it readable on big screens */
+  margin: 20px auto;       /* centers and adds breathing room */
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background: #ffffff2f;     /* white background */
+  border-radius: 6px;      /* soft rounded corners */
+  overflow: hidden;        /* keeps rounded corners neat */
+}
+
+/* headers + cells */
+.user-table th,
+.user-table td {
+  border: 1px solid #e5e5e5;
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+  word-break: break-word;
+}
+
+/* header row */
+.user-table th {
+  background: #c4cd142d;   /* lighter than before */
+  font-weight: 600;
+}
+
+/* softer zebra striping */
+.user-table tr:nth-child(even) {
+  background: #fcfcfc2e;   /* very subtle */
+}
+
+/* hover effect */
+.user-table tr:hover {
+  background: #f3f7ff27;   /* gentle blue highlight */
+}
+
+/* specialty column stacked items */
+.user-table td.specialty div {
+  margin-bottom: 4px;
+  line-height: 1.25;
+}
+.user-table td.specialty div:last-child {
+  margin-bottom: 0;
+}
+
+
