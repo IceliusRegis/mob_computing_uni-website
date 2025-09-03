@@ -1,0 +1,180 @@
+/* ============================= */
+/* RESPONSIVE MEDIA QUERIES */
+/* ============================= */
+
+/* Large tablets & small laptops (≤ 1024px) */
+@media (max-width: 1024px) {
+  .nav-links ul li a {
+    font-size: 1rem;
+  }
+
+  .header .inside .text-box h1 {
+    font-size: 3.5rem;
+  }
+
+  .school-history h1 {
+    font-size: 3.5rem;
+  }
+
+  .courses {
+    padding: 4rem 2rem;
+  }
+
+  .courses .c-row {
+    flex-wrap: wrap;  /* stack courses */
+    justify-content: center;
+  }
+
+  .courses .c-row .course-col {
+    flex-basis: 45%;
+  }
+
+  .form-flex-container {
+    gap: 1.5rem;
+  }
+}
+
+/* Tablets (≤ 768px) */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links img {
+    width: 12rem;
+    margin-bottom: 1rem;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header {
+    text-align: center;
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .header .inside {
+    flex-direction: column;
+  }
+
+  .header .inside img {
+    width: 80%;
+    max-width: 20rem;
+  }
+
+  .header .inside .text-box h1 {
+    font-size: 2.5rem;
+  }
+
+  .school-history .row {
+    flex-direction: column;
+  }
+
+  .mission-vision {
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .mission-vision .mv-col {
+    margin: 1rem 0;
+    padding: 2rem 1rem;
+  }
+
+  .courses .c-row .course-col {
+    flex-basis: 100%;
+  }
+
+  .director {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-section {
+    width: 95%;
+  }
+
+  .user-table {
+    font-size: 0.85rem;
+  }
+
+  .user-table th,
+  .user-table td {
+    padding: 6px;
+  }
+}
+
+/* Mobile phones (≤ 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .nav-links ul li a {
+    font-size: 0.9rem;
+  }
+
+  .header .inside .text-box h1 {
+    font-size: 2rem;
+  }
+
+  .header .inside img {
+    width: 100%;
+    max-width: 15rem;
+  }
+
+  .school-history h1,
+  .director-col h1,
+  .facilities h1,
+  .sub-header-about_us h1,
+  .sub-header-register h1 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .school-history .row .sh-col h1 {
+    font-size: 2rem;
+  }
+
+  .school-history .row .sh-col p {
+    font-size: 1rem;
+  }
+
+  .mission-vision .mv-col h1 {
+    font-size: 1.5rem;
+  }
+
+  .register-box input[type="submit"] {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .form-section input,
+  .form-section label {
+    width: 100%;
+  }
+
+  .form-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .course-grade select {
+    width: 100%;
+  }
+
+  .specialty-row {
+    flex-direction: column;
+  }
+
+  .user-table {
+    font-size: 0.75rem;
+  }
+}

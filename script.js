@@ -21,7 +21,16 @@ slides.insertBefore(lastClone, slides.firstChild);
 images = document.querySelectorAll('.slides img');
 
 // Set initial position
-const size = images[0].clientWidth;
+let size = images[0].clientWidth;
+
+// update size on window resize
+window.addEventListener("resize", () => {
+  size = images[0].clientWidth;
+  slides.style.transition = "none"; // prevent jump animation
+  slides.style.transform = `translateX(${-size * index}px)`;
+});
+
+
 slides.style.transform = `translateX(${-size * index}px)`;
 
 // Function to slide
