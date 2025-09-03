@@ -54,6 +54,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
+            // ✅ Phone number validation
+            const phoneRegex = /^09\d{8}$/; 
+            if (!phoneRegex.test(phone)) {
+                message.textContent = "⚠ Please enter a valid 10-digit phone number starting with 09.";
+                alert("⚠ Please enter a valid 10-digit phone number starting with 09.");
+                return;
+            }
+
+            // ✅ Username length validation (4–40 characters)
+            if (username.length < 4 || username.length > 40) {
+                message.textContent = "⚠ Username must be between 4 and 40 characters long.";
+                alert("⚠ Username must be between 4 and 40 characters long.");
+                return;
+            }
+
+
             // ✅ Email format validation (Gmail only)
             const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
             if (!gmailRegex.test(email)) {
