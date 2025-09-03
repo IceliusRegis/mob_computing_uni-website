@@ -85,6 +85,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width:100%;
 }
 
 
@@ -131,10 +132,11 @@ html {
 .pic-container{
     display: flex;
     justify-content: space-between;
+    overflow: auto;
 }
 
 .pic-container img{
-    width: 5rem;
+    width: clamp(2em, 5em, 5em);
     animation: spin 5.5s infinite linear;
 }
 
@@ -187,6 +189,11 @@ html {
     font-size: 1.5em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 2rem;
+}
+
+.sh-col img{
+    width: clamp(5vh,80vh,100%);
+    height: clamp(5vh,80vh,100%);
 }
 
 /* MISSION-VISION */
@@ -290,6 +297,10 @@ html {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+.director-col img{
+    width: 100%;
+}
+
 .staff{
     position: relative;
     display: flex;
@@ -299,6 +310,7 @@ html {
 }
 
 .staff-col h1{
+    width:100%;
     text-align: center;
     align-self: center;
     font-size: 3rem;
@@ -307,7 +319,7 @@ html {
 }
 
 .staff-col img{
-    width: 10rem;
+    width: clamp(2rem, 10rem, 10rem);
 }
 
 .facilities {
@@ -526,6 +538,7 @@ html {
     padding: 0.5rem;
     margin: 0.5rem;
     width: 20rem;
+    align-self: center;
 }
 
 
@@ -628,5 +641,3 @@ html {
 .user-table td.specialty div:last-child {
   margin-bottom: 0;
 }
-
-

@@ -30,21 +30,30 @@
 
         <div class="register-box"> <!-- same transparent box -->
             <form id="loginForm">
-                <h2>Educational Background</h2>
-                <label for="stats">Stats/University:</label><br>
-                <select id="stats">
-                    <option value="">-- Select University --</option>
-                    <option value="Speed University">Speed University</option>
-                    <option value="Guts University">Guts University</option>
-                    <option value="Power University">Power University</option>
-                    <option value="Stamina University">Stamina University</option>
-                    <option value="Wit University">Wit University</option>
-                </select><br><br>
+                <div class="form-flex-container">
+                    <h2>Educational Background</h2>
+                    <div class="form-section">
+                        <label for="stats">Stats/University:</label><br>
+                        <select id="stats">
+                            <option value="">-- Select University --</option>
+                            <option value="Speed University">Speed University</option>
+                            <option value="Guts University">Guts University</option>
+                            <option value="Power University">Power University</option>
+                            <option value="Stamina University">Stamina University</option>
+                            <option value="Wit University">Wit University</option>
+                        </select><br><br>
+                    </div>
+                </div>
 
-                <h2>Account Details</h2>
-                <input type="text" id="username" placeholder="Username"><br><br>
-                <input type="password" id="password" placeholder="Password"><br><br>
-                <input type="submit" value="Login">
+                <div class="form-flex-container">
+                    <h2>Account Details</h2>
+                    <div class="form-section">
+                        <input type="text" id="username" placeholder="Username"><br><br>
+                        <input type="password" id="password" placeholder="Password"><br><br>
+                        <input type="submit" value="Login">
+                    </div>
+                </div>
+                
 
                 
             </form>
