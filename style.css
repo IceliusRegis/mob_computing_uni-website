@@ -641,3 +641,41 @@ html {
 .user-table td.specialty div:last-child {
   margin-bottom: 0;
 }
+
+/* Make page full height with flexbox */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main dashboard content scrolls */
+.dashboard-main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/* Keep buttons above footer */
+.button-container {
+    margin-top: 20px;
+    margin-bottom: 40px; /* 👈 creates gap above footer */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width:100%;
+}
+
+.button-container {
+    position: relative;        /* stick to the bottom */
+    bottom: 60px;           /* leave space above footer */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    background: #fff;       /* background so text doesn’t overlap */
+    border-top: 1px solid #eee;
+    z-index: 1000;          /* keep above table */
+}
