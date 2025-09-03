@@ -459,6 +459,7 @@ html {
 #logoutBtn {
     background-color: #f44336; /* red */
     color: #fff;
+    padding: 0.5rem;
 }
 
 #logoutBtn:hover {
@@ -470,6 +471,7 @@ html {
 #clearUsersBtn {
     background-color: #2196F3; /* blue */
     color: #fff;
+    padding: 0.5rem;
 }
 
 #clearUsersBtn:hover {
@@ -656,6 +658,7 @@ body {
     padding: 20px;
 }
 
+
 /* Keep buttons above footer */
 .button-container {
     margin-top: 20px;
@@ -667,15 +670,17 @@ body {
 }
 
 .button-container {
-    position: relative;        /* stick to the bottom */
-    bottom: 60px;           /* leave space above footer */
+    position: relative;        /* stick to the bottom */          /* leave space above footer */
     left: 0;
-    width: 100%;
+    margin: 2rem;
+    width: 25%;
     display: flex;
     justify-content: center;
+    align-self: center;
     gap: 15px;
     padding: 10px;
-    background: #fff;       /* background so text doesn’t overlap */
+    background: #fff8aa;       /* background so text doesn’t overlap */
     border-top: 1px solid #eee;
+    border-radius: 10px;
     z-index: 1000;          /* keep above table */
 }

@@ -73,6 +73,8 @@ if (currentUser) {
     `;
     tbody.appendChild(row);
   }
+
+  
 }
 
 //// wrap the table to make it responsive ////
@@ -121,3 +123,20 @@ if (currentUser && currentUser.username === "admin") {
         }
     });
 }
+
+// // Create a footer row for buttons
+// const tfoot = document.createElement("tfoot");
+// const buttonRow = document.createElement("tr");
+
+// // colspan makes the buttons stretch across all columns
+// buttonRow.innerHTML = `
+//   <td colspan="7" class="button-cell">
+//     <button id="logoutBtn" class="action-btn">Logout</button>
+//     <div id="adminControls"></div>
+//   </td>
+// `;
+
+// tfoot.appendChild(buttonRow);
+// table.appendChild(tfoot);
+
+
