@@ -54,6 +54,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
+            // ✅ Phone number validation
+            const phoneRegex = /^09\d{8}$/; 
+            if (!phoneRegex.test(phone)) {
+                message.textContent = "⚠ Please enter a valid 10-digit phone number starting with 09.";
+                alert("⚠ Please enter a valid 10-digit phone number starting with 09.");
+                return;
+            }
+
+
             // ✅ Email format validation (Gmail only)
             const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
             if (!gmailRegex.test(email)) {
